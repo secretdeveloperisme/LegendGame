@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P"rel="stylesheet"/>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="game">
+    <canvas id="gameBoard"></canvas>
+    <div class="display">
+      <div class="display-detail">
+        <h1 class="title">Tetris Game</h1>
+        <p>Score : <span id="scoreOutput">0</span></p>
+        <p>Lines : <span id="lineOutput">0</span></p>
+        <p>Level : <span id="levelOutput">0</span></p>
+        <canvas id="next"></canvas>
+      </div>
+      <button id="btnPlay">Play</button>
+    </div>
+  </div>
+  <script src="constants.js"></script>
+  <script src="Piece.js"></script>
+  <script src="Board.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+  font-family: 'Press Start 2P', cursive;
+}
+.game{
+  width: 520px;
+  display: flex;
+}
+#gameBoard{
+ width: 320px;
+ border: 2px solid black;
+}
+.display{
+ width: 250px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 10px;
+}
+.title{
+  text-align: center;
+}
+.display-detail{
+  
+}
+#scoreOutput{
+  color: red;
+}
+
+#lineOutput{
+  color: purple;
+}
+#levelOutput{
+  color: #4caf50;
+}
+#btnPlay{
+  background-color: red;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+  outline: none;
+}
