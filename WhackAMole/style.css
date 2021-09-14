@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+
+#board{
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-flow: row wrap;
+}
+body{
+  cursor: url("hammer.png"), default;
+}
+.square{
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+.mole{
+  background-image: url("mole.png");
+  background-size: contain;
+}
+.broken{
+  background-color: red;
+}
