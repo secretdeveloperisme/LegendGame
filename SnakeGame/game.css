@@ -1,0 +1,19 @@
+*{
+  font-family: 'Press Start 2P', cursive;
+}
+
+#board{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+#btnStart{
+  padding: 5px 10px;
+  background-color: aquamarine;
+  border: 1px solid transparent;
+}
+#btnStart:hover{
+  opacity: 0.8;
+}
+#btnStart:active{
+  border: 1px solid red;
+}
