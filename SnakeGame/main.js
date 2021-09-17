@@ -53,6 +53,9 @@ function start(now = 0){
   }
   runningGame = requestAnimationFrame(start)
 }
+function moveSnake(head){
+
+}
 btnStart.addEventListener("click",(event)=>{
   board.reset();
   runningGame = requestAnimationFrame(start);
@@ -63,18 +66,6 @@ document.addEventListener("keyup",event=>{
     if(!(head.x === board.snake.coordinates[1].x && head.y === board.snake.coordinates[1].y) && event.key != board.snake.direction){
       if(board.checkValid(head)){
         board.snake.direction = event.key;
-        board.clearBoard();
-        if(!board.eatApple(head))
-            board.snake.addHead(head);
-        else {
-          account.score ++;
-          if(account.score === 5){
-            account.level++;
-            time.level = LEVELS[account.level];
-            account.score = 0;
-          }
-        }
-        board.draw();
       }
       else {
         gameOver();

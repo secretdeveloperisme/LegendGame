@@ -10,14 +10,14 @@ const KEY = {
   LEFT : "ArrowLeft"
 }
 const LEVELS = {
-  0 : 700,
-  1 : 600,
-  2 : 500,
-  3 : 400,
-  4 : 300,
-  5 : 200,
-  6 : 100,
-  7 : 50
+  0 : 600,
+  1 : 500,
+  2 : 400,
+  3 : 300,
+  4 : 200,
+  5 : 100,
+  6 : 50,
+  7 : 0
 }
 Object.freeze(LEVELS);
 Object.freeze(KEY);
